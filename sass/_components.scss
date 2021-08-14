@@ -63,6 +63,7 @@
   &__icon {
     height: 2rem;
     width: 2rem;
+    // CODE: svg 색상변경 fill
     // MEMO: svg fill로 색상을 바꿀 수 있다.
     fill: var(--color-grey-dark-3);
   }
@@ -70,6 +71,7 @@
 
 ///////////////////////////////////
 // USER NAV
+// CODE: align-self
 .user-nav {
   display: flex;
   align-items: center;
@@ -257,7 +259,7 @@
       padding: 1.25rem 2rem;
     }
   }
-
+  // CODE: flex, margin auto
   &__stars {
     //MEMO: flex: 1을 하면 요소의 크기가 늘어나기 때문에, hover 이벤트 시 적용 영역이 너무 커진다.
     // flex: 1 ;
@@ -323,6 +325,7 @@
 
 ///////////////////////////////////
 // BUTTON INLINE
+// CODE: 디자인 재사용성
 .btn-inline {
   border: none;
   color: var(--color-primary);
@@ -387,7 +390,7 @@
   padding: 3rem 0;
   border-top: var(--line);
   border-bottom: var(--line);
-
+  // CODE: n-column layout
   //MEMO: flex-wrap, flex-basis 속성으로 n개의 컬럼을 만들기
   display: flex;
   flex-wrap: wrap;
@@ -403,6 +406,7 @@
     width: 1rem;
     height: 1rem;
     margin-right: 0.7rem;
+    // CODE: svg 파일 색상 변경
     // MEMO: background-image로 svg파일을 가져오는 방식(old browser)은 색상 변경이 불가능하다 -> mask를 사용한다.
     // background-image: url(../img/chevron-thin-right.svg);
     // background-size: cover;
@@ -434,6 +438,7 @@
   }
 
   &__photo {
+    // CODE: box-sizing: content-box;
     //MEMO: border 가 사진 사이즈를 줄이기 때문에, border를 높이, 너비에 포함하도록 box-sizing을 기본값으로 돌려준다.
     box-sizing: content-box;
     height: 4rem;

@@ -37,7 +37,7 @@
     flex-direction: column;
   }
 }
-
+// CODE: flex-basis
 .sidebar {
   //MEMO: sidebar는 18%를 점유한다. viewport가 줄어들어도 그에 맞춰 18%를 점유함
   flex: 0 0 18%;
